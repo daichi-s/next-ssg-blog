@@ -11,7 +11,11 @@ type Article = {
   date: string;
 }
 
-export default function Home({ allArticlesData }) {
+type Props = {
+  allArticlesData: Article[]
+};
+
+export default function Home({ allArticlesData }: Props) {
   return (
     <Layout>
       <div className={styles.grid}>
