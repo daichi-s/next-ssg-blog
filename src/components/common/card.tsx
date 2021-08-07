@@ -9,10 +9,10 @@ type Props = {
 const Card = ({ title, description, date }: Props) => {
   return (
     <div className="max-w-sm w-full lg:max-w-full lg:flex border border-gray-100 shadow-md rounded-lg">
-      {/* TODO: backgroundにimage指定でサムネイル表示 */}
-      <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded text-center overflow-hidden flex items-center" title="Woman holding a mug">
-        {/* <Image src="" alt="Vercel Logo" className="rounded mx-auto" width={72} height={16} /> */}
-        {/* <img src="https://placehold.jp/150x150.png" alt="" className="rounded mx-auto" /> */}
+      <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded text-center overflow-hidden flex items-center">
+        <div className="mx-auto">
+          <Image src="/150x150.png" alt="article_thumbnail" className="rounded" width={150} height={150} />
+        </div>
       </div>
       <div className="bg-white p-4 flex flex-col justify-between leading-normal">
         <div className="mb-8">
