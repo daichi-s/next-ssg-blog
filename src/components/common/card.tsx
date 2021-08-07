@@ -12,7 +12,7 @@ const Card = ({ title, description, date }: Props) => {
       {/* TODO: backgroundにimage指定でサムネイル表示 */}
       <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded text-center overflow-hidden flex items-center" title="Woman holding a mug">
         {/* <Image src="" alt="Vercel Logo" className="rounded mx-auto" width={72} height={16} /> */}
-        <img src="https://placehold.jp/150x150.png" alt="" className="rounded mx-auto" />
+        {/* <img src="https://placehold.jp/150x150.png" alt="" className="rounded mx-auto" /> */}
       </div>
       <div className="bg-white p-4 flex flex-col justify-between leading-normal">
         <div className="mb-8">
