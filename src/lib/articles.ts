@@ -3,22 +3,16 @@ import path from 'path';
 import matter from 'gray-matter';
 import remark from 'remark';
 import html from 'remark-html';
+import { ArticleData, ArticleMetaData } from '../types/article';
 
 const articlesDirectory = path.join(process.cwd(), 'src/articles');
-
-type ArticlesData = {
-  id: string;
-  title: string;
-  description: string;
-  date: Date;
-}
 
 /**
  * mdxのメタデータを取得する
  *
  * @returns {ArticlesData}
  */
-export function getSortedArticlesData() {
+export function getSortedArticlesMetaData() {
   const fileNames = fs.readdirSync(articlesDirectory);
   const allArticlesData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.mdx$/, '');
@@ -31,7 +25,7 @@ export function getSortedArticlesData() {
     return {
       id,
       ...matterResult.data,
-    } as ArticlesData;
+    } as ArticleMetaData;
   });
 
   return allArticlesData.sort((a, b) => {
@@ -75,5 +69,5 @@ export async function getArticleData(id: string) {
     id,
     contentHtml,
     ...matterResult.data,
-  };
+  } as ArticleData;
 }

@@ -1,33 +1,27 @@
 import Layout from '../components/layouts/layout'
-import { getSortedArticlesData } from '../lib/articles'
+import { getSortedArticlesMetaData } from '../lib/articles'
 import ArticleList from '../components/articles/list'
-
-type Article = {
-  id: string;
-  title: string;
-  date: string;
-}
+import { ArticleMetaData } from '../types/article';
 
 type Props = {
-  allArticlesData: Article[]
+  allArticlesMetaData: ArticleMetaData[]
 };
 
-export default function Home({ allArticlesData }: Props) {
+export default function Home({ allArticlesMetaData }: Props) {
   return (
     <Layout>
         <div>
-          <ArticleList articlesData={allArticlesData}/>
+          <ArticleList articlesMetaData={allArticlesMetaData}/>
         </div>
     </Layout>
   )
-
 }
 
 export async function getStaticProps() {
-  const allArticlesData = getSortedArticlesData()
+  const allArticlesMetaData = getSortedArticlesMetaData()
   return {
     props: {
-      allArticlesData
+      allArticlesMetaData
     }
   }
 }
