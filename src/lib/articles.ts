@@ -7,9 +7,10 @@ import html from 'remark-html';
 const articlesDirectory = path.join(process.cwd(), 'src/articles');
 
 type ArticlesData = {
-  id: string,
-  title: string,
-  date: Date
+  id: string;
+  title: string;
+  description: string;
+  date: Date;
 }
 
 /**
