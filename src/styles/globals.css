@@ -1,0 +1,67 @@
+@import "~tailwindcss/base.css";
+@import "~tailwindcss/components.css";
+@import "~tailwindcss/utilities.css";
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.5;
+    outline: 0;
+}
+
+h2, h3, h4 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style: disc;
+    list-style-type: disc;
+    /* padding: 10px 20px; */
+    padding: 0.8rem 2rem;
+}
+
+li {
+    margin-bottom: 0.2rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+pre {
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: calc(16pt * 0.75) 16pt;
+    margin: 16pt 0;
+    /* font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace; */
+    /* white-space: pre; */
+    /* overflow: auto; */
+    /* line-height: 1.5; */
+    /* text-align: left; */
+    /* font-size: 0.875rem; */
+}
+
+code {
+    /* color: #000; */
+    font-size: 0.8rem;
+    /* line-height: 1.25rem; */
+    /* white-space: pre; */
+}

@@ -1,12 +1,6 @@
 import Layout from '../../components/layouts/layout';
 import { getAllArticleIds, getArticleData } from '../../lib/articles';
-
-type ArticleData = {
-    id: string;
-    contentHtml: string;
-    title: string;
-    date: string;
-};
+import { ArticleData } from '../../types/article';
 
 type Props = {
     articleData: ArticleData;
@@ -15,7 +9,11 @@ type Props = {
 export default function Post({ articleData }: Props) {
   return (
     <Layout>
-      <h2>{articleData.title}</h2>
+      <div className="text-center">
+        <h1>{articleData.title}</h1>
+        <div>投稿日：{articleData.date}</div>
+      </div>
+
       <div dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
     </Layout>
   );
