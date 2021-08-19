@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import { ReactNode } from 'react'
-import Footer from './footer'
-import Header from './header'
+import Head from 'next/head';
+import { ReactNode } from 'react';
+import Footer from './footer';
+import Header from './header';
 
 type Props = {
   children: ReactNode;
@@ -28,8 +28,8 @@ const Layout = ({ children }: Props) => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default Layout;
 

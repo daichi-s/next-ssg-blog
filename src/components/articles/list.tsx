@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ArticleMetaData } from '../../types/article';
-import Card from '../common/card'
+import Card from '../common/card';
 
 type Props = {
   articlesMetaData: ArticleMetaData[];
@@ -20,6 +20,6 @@ const ArticleList = ({ articlesMetaData }: Props) => {
       ))}
     </div>
   );
-}
+};
 
 export default ArticleList;

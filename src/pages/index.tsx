@@ -1,6 +1,6 @@
-import Layout from '../components/layouts/layout'
-import { getSortedArticlesMetaData } from '../lib/articles'
-import ArticleList from '../components/articles/list'
+import Layout from '../components/layouts/layout';
+import { getSortedArticlesMetaData } from '../lib/articles';
+import ArticleList from '../components/articles/list';
 import { ArticleMetaData } from '../types/article';
 
 type Props = {
@@ -14,14 +14,14 @@ export default function Home({ allArticlesMetaData }: Props) {
           <ArticleList articlesMetaData={allArticlesMetaData}/>
         </div>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const allArticlesMetaData = getSortedArticlesMetaData()
+  const allArticlesMetaData = getSortedArticlesMetaData();
   return {
     props: {
       allArticlesMetaData
     }
-  }
+  };
 }

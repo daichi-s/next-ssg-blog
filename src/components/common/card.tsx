@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 type Props = {
   title: string;
@@ -28,6 +28,6 @@ const Card = ({ title, description, date }: Props) => {
       </div>
     </div>
   );
-}
+};
 
 export default Card;
