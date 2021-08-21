@@ -6,7 +6,7 @@ type Props = {
     articleData: ArticleData;
 };
 
-export default function Post({ articleData }: Props) {
+export default function Article({ articleData }: Props) {
   return (
     <Layout>
       <div className="text-center">

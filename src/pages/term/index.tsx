@@ -1,10 +1,4 @@
 import Layout from '../../components/layouts/layout';
-import { getAllArticleIds, getArticleData } from '../../lib/articles';
-import { ArticleData } from '../../types/article';
-
-type Props = {
-  articleData: ArticleData;
-};
 
 const Term = () => {
   // TODO: 共通化
