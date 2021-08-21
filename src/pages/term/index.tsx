@@ -8,7 +8,7 @@ const Term = () => {
     <Layout>
       <div className="text-center">
         <h1>免責事項</h1>
-        <p>{process.env.BLOG_TITLE}(<a href="https://" className={linkClass}>https://</a>)（以下、「当サイト」とします。）における利用規約は、下記の通りです。</p>
+        <p>{process.env.BLOG_TITLE}(<a href={process.env.BLOG_URL} className={linkClass}>{process.env.BLOG_URL}</a>)（以下、「当サイト」とします。）における利用規約は、下記の通りです。</p>
       </div>
       <div>    
         <h2>当サイトの情報の正確性について</h2>

@@ -7,5 +7,6 @@ module.exports = withMDX({
   reactStrictMode: true,
   env: {
     BLOG_TITLE: process.env.BLOG_TITLE,
+    BLOG_URL: process.env.BLOG_URL,
   },
 });
