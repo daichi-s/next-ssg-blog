@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="mb-5">
           <Link href="/"><a>HOME</a></Link>
           <span className="mx-3">|</span>
-          <Link href=""><a>プライバシーポリシー</a></Link>
+          <Link href="/policy"><a>プライバシーポリシー</a></Link>
           <span className="mx-3">|</span>
           <Link href="/term"><a>免責事項</a></Link>
         </div>
