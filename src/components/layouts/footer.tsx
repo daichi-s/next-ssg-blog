@@ -1,18 +1,20 @@
-import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
     <footer className="text-center">
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{' '}
-        <span className="">
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </span>
-      </a>
+      <div className="pb-5">
+        <div className="mb-5">
+          <Link href="/"><a>HOME</a></Link>
+          <span className="mx-3">|</span>
+          <Link href=""><a>プライバシーポリシー</a></Link>
+          <span className="mx-3">|</span>
+          <Link href="/term"><a>免責事項</a></Link>
+        </div>
+        <div className="mb-5">
+          © 2021 {process.env.BLOG_TITLE}
+        </div>
+      </div>
     </footer>
   );
 };
