@@ -12,5 +12,6 @@ export type ArticleData = {
     description: string;
     date: Date;
     contentHtml: string;
+    thumbnail: string;
 }
 
