@@ -4,14 +4,18 @@ type Props = {
   title: string;
   description: string;
   date: Date;
+  thumbnail: string
 };
 
-const Card = ({ title, description, date }: Props) => {
+const Card = ({ title, description, date, thumbnail }: Props) => {
+  // 指定なしの場合、「no image」の画像を表示
+  const thumbnailPath = thumbnail === '' ? '/image/no_image.png' : `/image/${thumbnail}`;
+
   return (
     <div className="max-w-sm w-full lg:max-w-full lg:flex border border-gray-100 shadow-md rounded-lg">
       <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded text-center overflow-hidden flex items-center">
         <div className="mx-auto">
-          <Image src="/150x150.png" alt="article_thumbnail" className="rounded" width={150} height={150} />
+          <Image src={thumbnailPath} alt="thumbnail" className="rounded" width={150} height={150} />
         </div>
       </div>
       <div className="bg-white p-4 flex flex-col justify-between leading-normal">

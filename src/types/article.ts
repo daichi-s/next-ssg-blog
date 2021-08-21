@@ -3,6 +3,7 @@ export type ArticleMetaData = {
     title: string;
     description: string;
     date: Date;
+    thumbnail: string;
 }
 
 export type ArticleData = {

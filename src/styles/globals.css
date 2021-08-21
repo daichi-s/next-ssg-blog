@@ -66,3 +66,8 @@ code {
     /* line-height: 1.25rem; */
     /* white-space: pre; */
 }
+
+p > img {
+    width: 400px;
+    margin: 30px auto;
+}
