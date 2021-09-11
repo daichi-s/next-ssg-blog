@@ -25,8 +25,7 @@ const Card = ({ title, description, date, thumbnail }: Props) => {
         </div>
         <div className="flex items-center">
           <div className="text-sm">
-            <p className="text-gray-500">投稿日</p>
-            <p className="text-gray-500">{date}</p>
+            <p className="text-gray-500">投稿日: {date}</p>
           </div>
         </div>
       </div>
